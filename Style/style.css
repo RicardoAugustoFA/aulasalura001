@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria:#0f0e0e;
+    --cor-secundaria:#EEEEEE;
+    --cor-terciaria:#8b9a46;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.tituloDestaque{
+    color: #22d4fd;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-terciaria);
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+
+.teste{
+    gap: 82px;
+    padding: 8% 15%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teste__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.teste__conteudo__titulo{  
+    font-size: 2.25rem;
+    font-family: 'Krona onde', sans-serif;
+}
+
+.teste__conteudo__texto{
+    font-size: 1.5rem;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.apresentacao__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.teste__link_subtitulo{ 
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.apresentacao__link__botao{
+    color: var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.apresentacao__link__botao:hover{
+    background-color: #541212;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: var(--cor-primaria);
+    padding: 24px;
+    font-family: 'Monteserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    .teste{
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+
+    .teste__conteudo{
+        width: auto;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+
+    }
+
+}
